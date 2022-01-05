@@ -109,7 +109,7 @@ final class RecordTranslator
     private static void injectDefault(final ObjectNode propertyNode,
         final Schema.Field field)
     {
-        final JsonNode value = (JsonNode) field.defaultVal();
+        final Object value = field.defaultVal();
         if (value == null)
             return;
 
